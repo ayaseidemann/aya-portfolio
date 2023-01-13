@@ -1,0 +1,13 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+
+    &__wrapper {
+        height: 4rem;
+        background-color: rgb(236, 170, 170);
+        padding: 0.5rem;
+    }
+}
