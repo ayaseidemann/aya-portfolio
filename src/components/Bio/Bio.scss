@@ -1,0 +1,17 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.bio {
+    display: flex;
+    background-color: bisque;
+    padding: 0.5rem;
+
+    &__header {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    &__pic {
+        width: 8rem;
+    }
+}
