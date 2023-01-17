@@ -4,10 +4,35 @@
 .header {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    font-family: $header-font;
+    font-weight: 600;
 
     &__wrapper {
-        height: 4rem;
-        background-color: rgb(236, 170, 170);
-        padding: 0.5rem;
+        background-color: $light-background;
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        padding: 0.75rem;
+    }
+
+    &__title {
+        color: $dark-accent;
+        font-size: 2rem;
+        max-width: 12rem;
+    }
+
+    &__right {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 4rem;
+    }
+
+    &__icon {
+        text-align: center;
+        margin: auto;
+        color: $dark-accent;
+        width: 50%;
     }
 }

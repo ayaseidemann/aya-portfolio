@@ -10,10 +10,10 @@ function Header() {
                     <h1 className='header__title'>Aya Seidemann</h1>
                 </Link>
                 <div className='header__right'>
-                    <button className='header__mode'>🌙</button>
-                    <a className='header__email' href="mailto:aya.seidemann@gmail.com">email</a>
-                    <a className='header__github' href='https://github.com/ayaseidemann'>GitHub</a>
-                    <a className='header__linkedin' href='https://www.linkedin.com/in/aya-seidemann/'>LinkedIn</a>
+                    <button className='header__icon header__icon--mode'>🌙</button>
+                    <a className='header__icon header__icon--email' href="mailto:aya.seidemann@gmail.com">EM</a>
+                    <a className='header__icon header__icon--github' href='https://github.com/ayaseidemann'>GH</a>
+                    <a className='header__icon header__icon--linkedin' href='https://www.linkedin.com/in/aya-seidemann/'>LI</a>
                 </div>
             </header>
         </div>
