@@ -8,6 +8,7 @@ function Bio() {
             <div className='bio__text'>
                 <div className='bio__header--wrapper'>
                     <h2 className='bio__header'>Hello!</h2>
+                    <div className='bio__header--box'></div>
                 </div>
                 <h3 className='bio__subheader'>A positive and focused Software Developer with years of management work experience and a math background. </h3>
                 <p className='bio__p'>

@@ -1,0 +1,8 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+
+.main {
+    margin-top: 5.5rem;
+    background: $extra-light-background;
+
+}

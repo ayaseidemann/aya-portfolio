@@ -1,13 +1,15 @@
 import './Projects.scss';
+import profilePic from '../../assets/Aya.jpg';
+
 
 function Projects() {
 
     return (
         <div className='projects'>
-            <h2 className='projects__title'>Here are some of my projects</h2>
+            <h2 className='projects__title'>Projects</h2>
             <div className='projects__section'>
                 <div className='card'>
-                    <img className='card__img' src='' alt='project 1'/>
+                    <img className='card__img' src={profilePic} alt='project 1'/>
                     <div className='card__text'>
                         <h3 className='card__title'>Project 1</h3>
                         <div className='card__tags'>
@@ -20,7 +22,7 @@ function Projects() {
                     </div>
                 </div>
                 <div className='card'>
-                    <img className='card__img' src='' alt='project 2'/>
+                    <img className='card__img' src={profilePic} alt='project 2'/>
                     <div className='card__text'>
                         <h3 className='card__title'>Project 2</h3>
                         <div className='card__tags'>
@@ -33,7 +35,7 @@ function Projects() {
                     </div>
                 </div>
                 <div className='card'>
-                    <img className='card__img' src='' alt='project 3'/>
+                    <img className='card__img' src={profilePic} alt='project 3'/>
                     <div className='card__text'>
                         <h3 className='card__title'>Project 3</h3>
                         <div className='card__tags'>

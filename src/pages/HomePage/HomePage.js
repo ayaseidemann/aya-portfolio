@@ -9,9 +9,12 @@ function HomePage() {
     return(
         <>
             <Header />
-            <Bio />
-            <Projects />
-            <Contact />
+            <div className='main'>
+                <Bio />
+                <Projects />
+                <Contact />
+            </div>
+
         </>
     )
 }
