@@ -6,8 +6,8 @@ function Contact() {
         <div className='contact'>
             <h2 className='contact__title'>Contact me</h2>
             <div className='contact__links'>
-                <a className='contact__link' href='mailto:aya.seidemann@gmail.com'>aya.seidemann@gmail.com</a>
-                <a className='contact__link' href='https://www.linkedin.com/in/aya-seidemann/'>LinkedIn</a>
+                <a className='contact__link contact__link--email' href='mailto:aya.seidemann@gmail.com'>aya.seidemann@gmail.com</a>
+                <a className='contact__link contact__link--linkedin' href='https://www.linkedin.com/in/aya-seidemann/'>LinkedIn</a>
             </div>
         </div>
     )

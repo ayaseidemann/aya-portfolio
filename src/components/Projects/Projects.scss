@@ -18,6 +18,8 @@
     &__section {
         display: flex;
         flex-direction: column;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid $light-background;
     }
 }
 
@@ -37,6 +39,7 @@
     }
 
     &__title {
+        // font-family: $header-font;
         font-size: 1.25rem;
         font-weight: 600;
         color: $dark-accent;
