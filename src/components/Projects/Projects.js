@@ -3,7 +3,8 @@ import sudotwoLaptop from '../../assets/Pictures/sudotwo-laptop.png';
 import sudotwoPhone from '../../assets/Pictures/sudotwo-phone.png';
 import telusLaptop from '../../assets/Pictures/telus-laptop.png';
 import telusPhone from '../../assets/Pictures/telus-phone.png';
-
+import musicLaptop from '../../assets/Pictures/music-laptop.png';
+import musicPhone from '../../assets/Pictures/music-phone.png';
 
 function Projects() {
 
@@ -49,16 +50,20 @@ function Projects() {
                     </div>
                 </div>
                 <div className='card'>
-                    {/* <img className='card__img' src={profilePic} alt='project 3'/> */}
-                    <div className='card__text'>
-                        <h3 className='card__title'>Project 3</h3>
+                <div className='card__images'>
+                        <img className='card__phone' src={musicPhone} alt='music mood ring'/>
+                        <img className='card__laptop' src={musicLaptop} alt='music mood ring'/>
+                    </div>                    <div className='card__text'>
+                        <h3 className='card__title'>
+                            <a className='card__link' href='https://music-mood-ring.onrender.com/'>Music Mood Ring</a>
+                        </h3>
                         <div className='card__tags'>
                             <span className='card__tag'>JavaScript</span>
                             <span className='card__tag'>HTML</span>
                             <span className='card__tag'>CSS</span>
-                            <span className='card__tag'>Express</span>
+                            <span className='card__tag'>Web APIs</span>
                         </div>
-                        <p className='card__p'>Here's some info about the project</p>
+                        <p className='card__p'>I co-developed and desiged this music genre genorator</p>
                     </div>
                 </div>
             </div>
