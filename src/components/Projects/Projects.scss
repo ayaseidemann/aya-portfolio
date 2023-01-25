@@ -87,11 +87,10 @@
         font-size: 1.75rem;
         font-weight: 600;
         margin: -1rem 0 0.5rem 0;
-    }
 
-    &__link {
-        transition: all 1s;
-        color: $dark-accent;
+        &--linked {
+            margin: -1rem 0 0.2rem 0;
+        }
     }
 
     &__tags {
@@ -107,5 +106,32 @@
         margin: 0 0.25rem 0.25rem 0;
         padding: 0.25rem;
         border-radius: 3px;
+    }
+}
+
+.link {
+    // height: 1.5rem;
+    // width: 9rem;
+    // background: $dark-accent;
+    // border-radius: 3px;
+    // padding-top: 0.22rem;
+    // display: flex;
+    position: relative;
+    text-align: center;
+    color: $dark-accent;
+    transition: all 1s;
+    margin-bottom: 0.5rem;
+
+    &__a {
+        color: $dark-accent;
+    }
+
+    &__title {
+        margin-right: 0.25rem;
+    }
+
+    &__icon {
+        position: relative;
+        top: 0.175rem;
     }
 }
