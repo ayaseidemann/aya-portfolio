@@ -1,7 +1,20 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/mixins" as *;
 
+.dark .bio {
+    transition: all 1s;
+    background-color: $extra-dark-background;
+    color: $light-background;
+
+    &__p {
+        transition: all 1s;
+        border-bottom: 1px solid $dark-accent;
+    }
+}
+
+
 .bio {
+    transition: all 1s;
     display: flex;
     padding: 1rem;
     color: $dark-accent;
@@ -36,6 +49,7 @@
     }
 
     &__p {
+        transition: all 1s;
         font-size: 1.15rem;
         line-height: 1.25;
         padding-bottom: 1.5rem;

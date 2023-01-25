@@ -6,16 +6,25 @@ import Contact from '../../components/Contact/Contact';
 
 function HomePage() {
 
+    // set darkmode toggle
+    // const [mode, setMode] = useState('');
+
+    // function to toggle darkmode
+    function toggleDarkMode() {
+        let darkToggleClass = document.querySelector('.homepage');
+        darkToggleClass.classList.toggle('dark');
+        console.log('adding dark class to homepage');
+    }
+
     return(
-        <>
-            <Header />
+        <div className='homepage'>
+            <Header toggleDarkMode={toggleDarkMode} />
             <div className='main'>
                 <Bio />
                 <Projects />
                 <Contact />
             </div>
-
-        </>
+        </div>
     )
 }
 

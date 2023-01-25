@@ -1,7 +1,19 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/mixins" as *;
 
+.dark .contact {
+    transition: all 1s;
+    background: $extra-dark-background;
+    color: $light-background;
+
+    &__link {
+        transition: all 1s;
+        color: $light-background;
+    }
+}
+
 .contact {
+    transition: all 1s;
     padding: 1rem;
     color: $dark-accent;
 
@@ -21,6 +33,7 @@
     }
 
     &__link {
+        transition: all 1s;
         color: $dark-accent;
 
         &--email {

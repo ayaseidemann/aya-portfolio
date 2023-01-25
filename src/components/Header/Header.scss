@@ -1,6 +1,29 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/mixins" as *;
 
+.dark .header {
+
+    &__wrapper {
+        transition: all 1s;
+        background: $dark-accent;
+    }
+
+    &__title {
+        transition: all 1s;
+        color: $light-background;
+    }
+
+    &__icon {
+        transition: all 1s;
+        color: $light-background;
+
+        &--mode {
+            transition: all 1s;
+            background-color: $dark-accent;
+        }
+    }
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -9,7 +32,8 @@
     font-weight: 600;
 
     &__wrapper {
-        background-color: $light-background;
+        transition: all 1s;
+        background: $light-background;
         height: 5.5rem;
         width: 100%;
         display: flex;
@@ -21,6 +45,7 @@
     }
 
     &__title {
+        transition: all 1s;
         color: $dark-accent;
         font-size: 2rem;
         max-width: 12rem;
@@ -34,12 +59,14 @@
     }
 
     &__icon {
+        transition: all 1s;
         text-align: center;
         margin: auto;
         color: $dark-accent;
         width: 50%;
 
         &--mode {
+            transition: all 1s;
             background-color: $light-background;
         }
     }

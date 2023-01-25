@@ -2,7 +2,7 @@ import './Header.scss';
 import { Link } from 'react-router-dom';
 import { Moon, Sun, EnvelopeSimple, GithubLogo, LinkedinLogo } from "phosphor-react";
 
-function Header() {
+function Header({toggleDarkMode}) {
 
     return(
         <div className='header__wrapper'>
@@ -11,7 +11,7 @@ function Header() {
                     <h1 className='header__title'>Aya Seidemann</h1>
                 </Link>
                 <div className='header__right'>
-                    <button className='header__icon header__icon--mode'>
+                    <button className='header__icon header__icon--mode' onClick={() => toggleDarkMode()}>
                         <Moon size={24} />
                     </button>
                     <a className='header__icon header__icon--email' href="mailto:aya.seidemann@gmail.com">
