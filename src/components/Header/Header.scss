@@ -22,6 +22,16 @@
             background-color: $dark-accent;
         }
     }
+
+    &__svg {
+        transition: all 1s;
+        color: $light-background;
+
+        &--mode {
+            transition: all 1s;
+            background-color: $dark-accent;
+        }
+    }
 }
 
 .header {
@@ -64,6 +74,15 @@
         margin: auto;
         color: $dark-accent;
         width: 50%;
+
+        &--mode {
+            transition: all 1s;
+            background: $light-background;
+        }
+    }
+
+    &__svg {
+        transition: all 1s;
 
         &--mode {
             transition: all 1s;

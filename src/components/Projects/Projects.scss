@@ -3,7 +3,6 @@
 
 .dark .projects {
     transition: all 1s;
-    background: $extra-dark-background;
     color: $light-background;
 
     &__section {
@@ -21,6 +20,14 @@
     &__tag {
         transition: all 1s;
         background: $dark-accent;
+    }
+}
+
+.dark .link {
+    color: $light-background;
+
+    &__a {
+        color: $light-background;
     }
 }
 

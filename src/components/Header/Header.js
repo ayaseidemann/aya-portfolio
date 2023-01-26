@@ -2,7 +2,7 @@ import './Header.scss';
 import { Link } from 'react-router-dom';
 import { Moon, Sun, EnvelopeSimple, GithubLogo, LinkedinLogo } from "phosphor-react";
 
-function Header({toggleDarkMode}) {
+function Header({ mode, toggleDarkMode }) {
 
     return(
         <div className='header__wrapper'>
@@ -11,17 +11,24 @@ function Header({toggleDarkMode}) {
                     <h1 className='header__title'>Aya Seidemann</h1>
                 </Link>
                 <div className='header__right'>
+                    {mode === 'light' &&
                     <button className='header__icon header__icon--mode' onClick={() => toggleDarkMode()}>
-                        <Moon size={24} />
+                        <Moon className='header__svg header__svg--mode' size={24} />
                     </button>
+                    }
+                    {mode === 'dark' &&
+                    <button className='header__icon header__icon--mode' onClick={() => toggleDarkMode()}>
+                        <Sun className='header__svg header__svg--mode' size={24} />
+                    </button>
+                    }
                     <a className='header__icon header__icon--email' href="mailto:aya.seidemann@gmail.com">
-                        <EnvelopeSimple size={24} />
+                        <EnvelopeSimple className='header__svg header__svg--mode' size={24} />
                     </a>
                     <a className='header__icon header__icon--github' href='https://github.com/ayaseidemann'>
-                        <GithubLogo size={24} />
+                        <GithubLogo className='header__svg header__svg--mode' size={24} />
                     </a>
                     <a className='header__icon header__icon--linkedin' href='https://www.linkedin.com/in/aya-seidemann/'>
-                        <LinkedinLogo size={24} />
+                        <LinkedinLogo className='header__svg header__svg--mode' size={24} />
                     </a>
                 </div>
             </header>

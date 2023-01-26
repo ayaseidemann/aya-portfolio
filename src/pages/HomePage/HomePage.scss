@@ -1,8 +1,13 @@
 @use '../../styles/partials/variables' as *;
 @use '../../styles/partials/mixins' as *;
 
+.dark .main {
+    transition: all 1s;
+    background: $extra-dark-background;
+}
+
 .main {
+    transition: all 1s;
     margin-top: 5.5rem;
     background: $extra-light-background;
-
 }
