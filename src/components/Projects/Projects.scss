@@ -46,6 +46,11 @@
         font-size: 2.5rem;
         // position: sticky;
         // top: 6rem;
+
+        @include tablet {
+            font-size: 3rem;
+            margin: 1rem;
+        }
     }
 
     &__section {
@@ -54,6 +59,12 @@
         flex-direction: column;
         padding-bottom: 1.5rem;
         border-bottom: 1px solid $light-background;
+
+        @include tablet {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
     }
 }
 
@@ -62,6 +73,10 @@
     flex-direction: column;
     border-radius: 5px;
     margin: 0 0.5rem 2.5rem 0.5rem;
+
+    @include tablet {
+        max-width: 20rem;
+    }
 
     &__images {
         display: flex;
@@ -97,6 +112,12 @@
 
         &--linked {
             margin: -1rem 0 0.2rem 0;
+        }
+
+        @include tablet {
+            &--not-linked {
+                margin-bottom: 2.2rem;
+            }
         }
     }
 

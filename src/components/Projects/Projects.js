@@ -50,7 +50,7 @@ function Projects() {
                         <img className='card__laptop' src={telusLaptop} alt='telus'/>
                     </div>
                     <div className='card__text'>
-                        <h3 className='card__title'>Telus Hackathon</h3>
+                        <h3 className='card__title card__title--not-linked'>Telus Hackathon</h3>
                         <div className='card__tags'>
                             <span className='card__tag'>JavaScript</span>
                             <span className='card__tag'>React</span>
@@ -87,7 +87,7 @@ function Projects() {
                         <img className='card__laptop' src={brainflixLaptop} alt='brainflix'/>
                     </div>                    
                     <div className='card__text'>
-                        <h3 className='card__title'>Brainflix</h3>
+                        <h3 className='card__title card__title--not-linked'>Brainflix</h3>
                         <div className='card__tags'>
                             <span className='card__tag'>JavaScript</span>
                             <span className='card__tag'>React</span>
@@ -104,7 +104,7 @@ function Projects() {
                         <img className='card__laptop' src={bandLaptop} alt='bandsite'/>
                     </div>                    
                     <div className='card__text'>
-                        <h3 className='card__title'>Bandsite</h3>
+                        <h3 className='card__title card__title--not-linked'>Bandsite</h3>
                         <div className='card__tags'>
                             <span className='card__tag'>JavaScript</span>
                             <span className='card__tag'>HTML</span>

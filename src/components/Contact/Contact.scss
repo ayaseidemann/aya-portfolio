@@ -15,20 +15,33 @@
     transition: all 1s;
     padding: 1rem;
     color: $dark-accent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
     &__title {
         font-family: $header-font;
         font-weight: 600;
-        text-align: center;
         font-size: 2.5rem;
         margin-bottom: 1.5rem;
+
+        @include tablet {
+            text-align: left;
+            font-size: 3rem;
+        }
     }
 
     &__links {
-        display: flex;
-        justify-content: center;
         margin-bottom: 0.5rem;
+
+        @include tablet {
+            justify-content: flex-end;
+        }
     }
 
     &__link {
