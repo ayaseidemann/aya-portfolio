@@ -2,12 +2,15 @@
 @use '../../styles/partials/mixins' as *;
 
 .dark .main {
-    transition: all 1s;
+    transition: all 0.5s;
     background: $extra-dark-background;
 }
 
 .main {
-    transition: all 1s;
+    transition: all 0.5s;
     margin-top: 5.5rem;
     background: $extra-light-background;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

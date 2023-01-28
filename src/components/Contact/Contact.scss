@@ -2,22 +2,24 @@
 @use "../../styles/partials/mixins" as *;
 
 .dark .contact {
-    transition: all 1s;
+    transition: all 0.5s;
     color: $light-background;
 
     &__link {
-        transition: all 1s;
+        transition: all 0.5s;
         color: $light-background;
     }
 }
 
 .contact {
-    transition: all 1s;
+    transition: all 0.5s;
     padding: 1rem;
     color: $dark-accent;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    max-width: 57rem;
 
     @include tablet {
         flex-direction: row;
@@ -45,7 +47,7 @@
     }
 
     &__link {
-        transition: all 1s;
+        transition: all 0.5s;
         color: $dark-accent;
 
         &--email {

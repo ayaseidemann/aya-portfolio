@@ -2,23 +2,23 @@
 @use "../../styles/partials/mixins" as *;
 
 .dark .projects {
-    transition: all 1s;
+    transition: all 0.5s;
     color: $light-background;
 
     &__section {
-        transition: all 1s;
+        transition: all 0.5s;
         border-bottom: 1px solid $dark-accent;
     }
 }
 
 .dark .card {
     &__link {
-        transition: all 1s;
+        transition: all 0.5s;
         color: $light-background;
     }
 
     &__tag {
-        transition: all 1s;
+        transition: all 0.5s;
         background: $dark-accent;
     }
 }
@@ -32,13 +32,13 @@
 }
 
 .projects {
-    transition: all 1s;
+    transition: all 0.5s;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem;
     color: $dark-accent;
-
+    max-width: 57rem;
 
     &__title {
         font-family: $header-font;
@@ -49,12 +49,12 @@
 
         @include tablet {
             font-size: 3rem;
-            margin: 1rem;
+            margin: 3rem 1rem 1rem 1rem;
         }
     }
 
     &__section {
-        transition: all 1s;
+        transition: all 0.5s;
         display: flex;
         flex-direction: column;
         padding-bottom: 1.5rem;
@@ -129,7 +129,7 @@
     }
 
     &__tag {
-        transition: all 1s;
+        transition: all 0.5s;
         background: $light-background;
         margin: 0 0.25rem 0.25rem 0;
         padding: 0.25rem;
@@ -138,6 +138,7 @@
 }
 
 .link {
+    transition: all 0.5s;
     // height: 1.5rem;
     // width: 9rem;
     // background: $dark-accent;
@@ -147,7 +148,6 @@
     position: relative;
     text-align: center;
     color: $dark-accent;
-    transition: all 1s;
     margin-bottom: 0.5rem;
 
     &__a {
