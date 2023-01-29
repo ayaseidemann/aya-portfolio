@@ -3,18 +3,18 @@
 
 .dark .contact {
     transition: all 0.5s;
-    color: $light-background;
+    color: $medium-light-color;
 
     &__link {
         transition: all 0.5s;
-        color: $light-background;
+        color: $medium-light-color;
     }
 }
 
 .contact {
     transition: all 0.5s;
     padding: 1rem;
-    color: $dark-accent;
+    color: $medium-dark-color;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,7 +48,7 @@
 
     &__link {
         transition: all 0.5s;
-        color: $dark-accent;
+        color: $medium-dark-color;
 
         &--email {
             margin-right: 1rem;

@@ -3,31 +3,31 @@
 
 .dark .projects {
     transition: all 0.5s;
-    color: $light-background;
+    color: $medium-light-color;
 
     &__section {
         transition: all 0.5s;
-        border-bottom: 1px solid $dark-accent;
+        border-bottom: 1px solid $medium-dark-color;
     }
 }
 
 .dark .card {
     &__link {
         transition: all 0.5s;
-        color: $light-background;
+        color: $medium-light-color;
     }
 
     &__tag {
         transition: all 0.5s;
-        background: $dark-accent;
+        background: $medium-dark-color;
     }
 }
 
 .dark .link {
-    color: $light-background;
+    color: $medium-light-color;
 
     &__a {
-        color: $light-background;
+        color: $medium-light-color;
     }
 }
 
@@ -37,7 +37,7 @@
     flex-direction: column;
     align-items: center;
     padding: 1rem;
-    color: $dark-accent;
+    color: $medium-dark-color;
     max-width: 57rem;
 
     &__title {
@@ -58,7 +58,7 @@
         display: flex;
         flex-direction: column;
         padding-bottom: 1.5rem;
-        border-bottom: 1px solid $light-background;
+        border-bottom: 1px solid $medium-light-color;
 
         @include tablet {
             flex-direction: row;
@@ -130,7 +130,7 @@
 
     &__tag {
         transition: all 0.5s;
-        background: $light-background;
+        background: $medium-light-color;
         margin: 0 0.25rem 0.25rem 0;
         padding: 0.25rem;
         border-radius: 3px;
@@ -141,17 +141,17 @@
     transition: all 0.5s;
     // height: 1.5rem;
     // width: 9rem;
-    // background: $dark-accent;
+    // background: $medium-dark-color;
     // border-radius: 3px;
     // padding-top: 0.22rem;
     // display: flex;
     position: relative;
     text-align: center;
-    color: $dark-accent;
+    color: $medium-dark-color;
     margin-bottom: 0.5rem;
 
     &__a {
-        color: $dark-accent;
+        color: $medium-dark-color;
     }
 
     &__title {

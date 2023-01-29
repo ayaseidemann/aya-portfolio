@@ -1,7 +1,7 @@
 import './HomePage.scss';
 
 import Header from '../../components/Header/Header';
-import Bio from '../../components/Bio/Bio';
+// import Bio from '../../components/Bio/Bio';
 import Projects from '../../components/Projects/Projects';
 import Contact from '../../components/Contact/Contact';
 
@@ -28,7 +28,7 @@ function HomePage() {
         <div className='homepage'>
             <Header mode={mode} toggleDarkMode={toggleDarkMode} />
             <div className='main'>
-                <Bio />
+                {/* <Bio /> */}
                 <Projects />
                 <Contact />
             </div>

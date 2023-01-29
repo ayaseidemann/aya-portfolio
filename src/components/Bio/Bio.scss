@@ -1,104 +1,104 @@
-@use "../../styles/partials/variables" as *;
-@use "../../styles/partials/mixins" as *;
+// @use "../../styles/partials/variables" as *;
+// @use "../../styles/partials/mixins" as *;
 
-.dark .bio {
-    transition: all 0.5;
-    color: $light-background;
+// .dark .bio {
+//     transition: all 0.5;
+//     color: $medium-light-color;
 
-    &__p {
-        transition: all 0.5s;
-        border-bottom: 1px solid $dark-accent;
-    }
-}
+//     &__p {
+//         transition: all 0.5s;
+//         border-bottom: 1px solid $medium-dark-color;
+//     }
+// }
 
 
-.bio {
-    transition: all 0.5s;
-    display: flex;
-    padding: 1rem;
-    color: $dark-accent;
-    width: 85%;
-    // max-width: 57rem;
-    max-width: 45rem;
-    position: relative;
-    margin-top: 4rem;
+// .bio {
+//     transition: all 0.5s;
+//     display: flex;
+//     padding: 1rem;
+//     color: $medium-dark-color;
+//     width: 85%;
+//     // max-width: 57rem;
+//     max-width: 45rem;
+//     position: relative;
+//     margin-top: 4rem;
 
-    @include tablet {
-        width: 80%;
-    }
+//     @include tablet {
+//         width: 80%;
+//     }
 
-    &__text {
-        width: 100%;
-        color: $light-background;
+//     &__text {
+//         width: 100%;
+//         color: $medium-light-color;
 
-        @include tablet {
-            width: 25rem;
-        }
+//         @include tablet {
+//             width: 25rem;
+//         }
 
-        &--box {
-            background: $extra-dark-background;
-            width: 90%;
-            height: 80%;
-            position: absolute;
-            top: 1.5rem;
-            z-index: 1;
-        }
-    }
+//         &--box {
+//             background: $dark-color;
+//             width: 90%;
+//             height: 80%;
+//             position: absolute;
+//             top: 1.5rem;
+//             z-index: 1;
+//         }
+//     }
 
-    &__header {
-        font-family: $header-font;
-        font-weight: 600;
-        font-size: 2.5rem;
-        z-index: 10;
+//     &__header {
+//         font-family: $header-font;
+//         font-weight: 600;
+//         font-size: 2.5rem;
+//         z-index: 10;
 
-        @include tablet {
-            font-size: 3rem;
-            margin-left: 2rem;
-        }
+//         @include tablet {
+//             font-size: 3rem;
+//             margin-left: 2rem;
+//         }
 
-        &--wrapper {
-            height: 6rem;
-            display: flex;
-            align-items: center;
-        }
-    }
+//         &--wrapper {
+//             height: 6rem;
+//             display: flex;
+//             align-items: center;
+//         }
+//     }
 
-    &__p {
-        transition: all 0.5s;
-        font-size: 1.15rem;
-        line-height: 1.25;
-        padding-bottom: 1.5rem;
-        // border-bottom: 1px solid $light-background;
-        margin-left: 2rem;
-        position: relative;
-        z-index: 10;
-    }
+//     &__p {
+//         transition: all 0.5s;
+//         font-size: 1.15rem;
+//         line-height: 1.25;
+//         padding-bottom: 1.5rem;
+//         // border-bottom: 1px solid $medium-light-color;
+//         margin-left: 2rem;
+//         position: relative;
+//         z-index: 10;
+//     }
 
-    &__pic {
-        width: 10rem;
-        height: 10rem;
-        object-fit: cover;
-        object-position: top;
-        position: absolute;
-        top: 0;
-        right: 2.5rem;
-        z-index: 15;
+//     &__pic {
+//         width: 10rem;
+//         height: 10rem;
+//         object-fit: cover;
+//         object-position: top;
+//         position: absolute;
+//         top: 0;
+//         right: 2.5rem;
+//         z-index: 15;
 
-        @include tablet {
-            top: -3rem;
-            right: 0;
-            width: 18rem;
-            height: 18rem;
-        }
+//         @include tablet {
+//             top: -3rem;
+//             right: 0;
+//             width: 18rem;
+//             height: 18rem;
+//         }
 
-        &--box {
-            background: $dark-accent;
-            width: 17.5rem;
-            height: 17rem;
-            position: absolute;
-            top: -2rem;
-            right: 0;
-            z-index: 0;
-        }
-    }
-}
+//         &--box {
+//             background: $medium-dark-color;
+//             width: 17.5rem;
+//             height: 17rem;
+//             position: absolute;
+//             top: -2rem;
+//             right: 0;
+//             z-index: 0;
+//         }
+//     }
+// }
