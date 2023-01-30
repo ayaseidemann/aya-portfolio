@@ -21,17 +21,6 @@
     }
 }
 
-
-.dark .bio {
-    transition: all 0.5;
-    color: $medium-light-color;
-
-    &__p {
-        transition: all 0.5s;
-        border-bottom: 1px solid $medium-dark-color;
-    }
-}
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -74,95 +63,6 @@
 
         &--mode {
             background: $white;
-        }
-    }
-}
-
-
-.bio {
-    transition: all 0.5s;
-    display: flex;
-    padding: 1rem;
-    color: $medium-dark-color;
-    width: 85%;
-    // max-width: 57rem;
-    max-width: 45rem;
-    position: relative;
-    margin-top: 4rem;
-
-    @include tablet {
-        width: 80%;
-    }
-
-    &__text {
-        width: 100%;
-        color: $medium-light-color;
-
-        @include tablet {
-            width: 25rem;
-        }
-
-        &--box {
-            background: $medium-light-color;
-            width: 90%;
-            height: 85%;
-            position: absolute;
-            top: 1.5rem;
-            z-index: 1;
-        }
-    }
-
-    &__header {
-        transition: all 0.5s;
-        font-family: $header-font;
-        color: $white;
-        font-weight: 600;
-        font-size: 2.5rem;
-        padding: 2rem 1rem 0 1rem;
-        position: relative;
-        z-index: 10;
-
-        @include tablet {
-            font-size: 3rem;
-            margin-left: 2rem;
-        }
-    }
-
-    &__p {
-        transition: all 0.5s;
-        color: $white;
-        font-size: 1rem;
-        line-height: 1.25;
-        padding: 1rem;
-        position: relative;
-        z-index: 10;
-    }
-
-    &__pic {
-        width: 14rem;
-        height: 13rem;
-        object-fit: cover;
-        object-position: top;
-        position: absolute;
-        top: 9rem;
-        right: 0;
-        z-index: 15;
-
-        @include tablet {
-            top: -3rem;
-            right: 0;
-            width: 18rem;
-            height: 18rem;
-        }
-
-        &--box {
-            background: $light-color;
-            width: 70%;
-            height: 100%;
-            position: absolute;
-            top: 8.5rem;
-            right: 0;
-            z-index: 0;
         }
     }
 }
