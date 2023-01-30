@@ -14,20 +14,26 @@ import linkedinMediumLight from '../../assets/Icons/linkedin-medium-light.png';
 
 function Header({ mode, toggleDarkMode }) {
 
+    // get icons to show and hide based on window position
+    let bioIcons = document.querySelector('.header__left-icons');
+    function iconDisplayHeader() {
+        if (window.scrollY < 200) {
+            bioIcons.classList.add('header__left-icons--hidden');
+        } else {
+            bioIcons.classList.remove('header__left-icons--hidden');
+        }
+    }
+    window.addEventListener('scroll', iconDisplayHeader);
+
     return (
         <div className='header__wrapper'>
             <header className='header'>
                 <Link className='header__home-link' to='/'>
                     <h1 className='header__title'>Aya Seidemann</h1>
                 </Link>
-                <div className='header__right'>
-                    {mode === 'light' &&
-                        <>
-                            <img
-                                className='header__icon header__icon--mode'
-                                src={moonMediumDark}
-                                onClick={() => toggleDarkMode()}
-                                alt='darkmode' />
+                {mode === 'light' &&
+                    <div className='header__icons'>
+                        <div className='header__left-icons header__left-icons--hidden'>
                             <a className='header__link header__link--email' href="mailto:aya.seidemann@gmail.com">
                                 <img
                                     className='header__icon header__icon--email'
@@ -46,15 +52,17 @@ function Header({ mode, toggleDarkMode }) {
                                     src={linkedinMediumDark}
                                     alt='linkedin' />
                             </a>
-                        </>
-                    }
-                    {mode === 'dark' &&
-                        <>
-                            <img
-                                className='header__icon header__icon--mode'
-                                src={sunMediumLight}
-                                onClick={() => toggleDarkMode()}
-                                alt='darkmode' />
+                        </div>
+                        <img
+                            className='header__icon header__icon--mode'
+                            src={moonMediumDark}
+                            onClick={() => toggleDarkMode()}
+                            alt='darkmode' />
+                    </div>
+                }
+                {mode === 'dark' &&
+                    <div className='header__icons'>
+                        <div className='header__left-icons'>
                             <a className='header__link header__link--email' href="mailto:aya.seidemann@gmail.com">
                                 <img
                                     className='header__icon header__icon--email'
@@ -73,9 +81,14 @@ function Header({ mode, toggleDarkMode }) {
                                     src={linkedinMediumLight}
                                     alt='linkedin' />
                             </a>
-                        </>
-                    }
-                </div>
+                        </div>
+                        <img
+                            className='header__icon header__icon--mode'
+                            src={sunMediumLight}
+                            onClick={() => toggleDarkMode()}
+                            alt='darkmode' />
+                    </div>
+                }
             </header>
         </div>
     )

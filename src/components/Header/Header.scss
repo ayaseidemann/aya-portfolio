@@ -13,7 +13,6 @@
     }
 
     &__icon {
-        color: $medium-light-color;
 
         &--mode {
             background-color: $medium-dark-color;
@@ -44,22 +43,28 @@
 
     &__title {
         color: $medium-dark-color;
-        font-size: 2rem;
-        max-width: 12rem;
+        font-size: 1.5rem;
+        line-height: 0.9 ;
+        max-width: 8rem;
     }
 
-    &__right {
+    &__icons {
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
-        width: 4.5rem;
+        align-items: center;
+    }
+
+    &__left-icons {
+        &--hidden {
+            display: none;
+        }
     }
 
     &__icon {
-        text-align: center;
-        margin: auto;
-        color: $medium-dark-color;
-        width: 50%;
+        width: 2rem;
+        height: 2rem;
+        margin-left: 0.75rem;
 
         &--mode {
             background: $white;
