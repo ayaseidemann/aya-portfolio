@@ -14,17 +14,6 @@ import linkedinMediumLight from '../../assets/Icons/linkedin-medium-light.png';
 
 function Header({ mode, toggleDarkMode }) {
 
-    // get icons to show and hide based on window position
-    let bioIcons = document.querySelector('.header__left-icons');
-    function iconDisplayHeader() {
-        if (window.scrollY < 200) {
-            bioIcons.classList.add('header__left-icons--hidden');
-        } else {
-            bioIcons.classList.remove('header__left-icons--hidden');
-        }
-    }
-    window.addEventListener('scroll', iconDisplayHeader);
-
     return (
         <div className='header__wrapper'>
             <header className='header'>

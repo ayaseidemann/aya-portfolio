@@ -1,13 +1,19 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/mixins" as *;
 
+.icons-header .bio {
+
+    &__icons {
+        visibility: hidden;
+    }
+}
+
 .dark .bio {
     transition: all 0.5;
     color: $medium-light-color;
 
     &__p {
         transition: all 0.5s;
-        border-bottom: 1px solid $medium-dark-color;
     }
 }
 
@@ -104,10 +110,6 @@
         flex-direction: column;
         bottom: -8.7rem;
         left: 2.3rem;
-
-        &--hidden {
-            display: none;
-        }
     }
 
     &__icon {

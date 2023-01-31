@@ -11,17 +11,6 @@ import linkedinMediumLight from '../../assets/Icons/linkedin-medium-light.png';
 
 function Bio({ mode }) {
 
-    // get icons to show and hide based on window position
-    let bioIcons = document.querySelector('.bio__icons');
-    function iconDisplayBio() {
-        if (window.scrollY > 200) {
-            bioIcons.classList.add('bio__icons--hidden');
-        } else {
-            bioIcons.classList.remove('bio__icons--hidden');
-        }
-    }
-    window.addEventListener('scroll', iconDisplayBio);
-
     return (
         <div className='bio'>
             <div className='bio__text'>

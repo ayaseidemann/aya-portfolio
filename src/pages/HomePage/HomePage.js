@@ -9,19 +9,36 @@ import { useState } from 'react';
 
 function HomePage() {
 
+        // get icons to show and hide based on window position
+        let iconsInHeader = false;
+        function iconDisplay() {
+            if (window.scrollY < 200 && iconsInHeader) {
+                document.body.classList.remove('icons-header');
+                // console.log('removing icons from bio, should be in header');
+                iconsInHeader = false;
+            } else if (window.scrollY >= 200 && !iconsInHeader) {
+                document.body.classList.add('icons-header');
+                // console.log('adding icons to header, should not be in bio');
+                iconsInHeader = true;
+            }
+        }
+        window.addEventListener('scroll', iconDisplay, false);
+
     // set darkmode toggle
     const [mode, setMode] = useState('light');
 
     // function to toggle darkmode
     function toggleDarkMode() {
         let darkToggleClass = document.querySelector('.homepage');
-        darkToggleClass.classList.toggle('dark');
         if (mode === 'light') {
             setMode('dark');
+            darkToggleClass.classList.add('dark');
+            console.log('switched to dark mode');
         } else {
             setMode('light');
+            darkToggleClass.classList.remove('dark');
+            console.log('switched to light mode');
         }
-        console.log('adding dark class to homepage');
     }
 
     return(

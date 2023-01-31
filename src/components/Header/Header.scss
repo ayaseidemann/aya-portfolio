@@ -1,11 +1,19 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/mixins" as *;
 
+.icons-header .header {
+
+    &__left-icons {
+        visibility: visible;
+
+    }
+}
+
 .dark .header {
 
     &__wrapper {
         // transition: all 0.5s;
-        background: $medium-dark-color;
+        background: $dark-color;
     }
 
     &__title {
@@ -15,7 +23,7 @@
     &__icon {
 
         &--mode {
-            background-color: $medium-dark-color;
+            background-color: $dark-color;
         }
     }
 }
@@ -56,9 +64,7 @@
     }
 
     &__left-icons {
-        &--hidden {
-            display: none;
-        }
+        visibility: hidden;
     }
 
     &__icon {
