@@ -15,11 +15,9 @@ function App() {
           if (mode === 'light') {
               setMode('dark');
               darkToggleClass.classList.add('dark');
-              console.log('switched to dark mode');
           } else {
               setMode('light');
               darkToggleClass.classList.remove('dark');
-              console.log('switched to light mode');
           }
       }
 
