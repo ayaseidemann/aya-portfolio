@@ -29,24 +29,29 @@
     margin-top: 4rem;
 
     @include tablet {
-        width: 80%;
+        width: 33rem;
     }
 
     &__text {
-        width: 100%;
+        width: 19rem;
         color: $medium-light-color;
 
         @include tablet {
-            width: 25rem;
+            width: 20rem;
         }
 
         &--box {
             background: $medium-light-color;
             width: 90%;
+            max-width: 19rem;
             height: 85%;
             position: absolute;
             top: 1.5rem;
             z-index: 1;
+
+            @include tablet {
+                max-width: 30rem;
+            }
         }
     }
 
@@ -62,7 +67,7 @@
 
         @include tablet {
             font-size: 3rem;
-            margin-left: 2rem;
+            padding-left: 1.5rem;
         }
     }
 
@@ -74,6 +79,10 @@
         padding: 1rem;
         position: relative;
         z-index: 10;
+
+        @include tablet {
+            padding-left: 1.5rem;
+        }
     }
 
     &__pic {
@@ -87,7 +96,7 @@
         z-index: 15;
 
         @include tablet {
-            top: -3rem;
+            top: 3.25rem;
             right: 0;
             width: 18rem;
             height: 18rem;
@@ -95,12 +104,16 @@
 
         &--box {
             background: $light-color;
-            width: 70%;
+            width: 13.5rem;
             height: 100%;
             position: absolute;
             top: 8.5rem;
             right: 0;
             z-index: 0;
+
+            @include tablet {
+                width: 53%;
+            }
         }
     }
 
@@ -109,7 +122,11 @@
         display: flex;
         flex-direction: column;
         bottom: -8.7rem;
-        left: 2.3rem;
+        right: 14.5rem;
+
+        @include tablet {
+            right: 18rem;
+        }
     }
 
     &__icon {
