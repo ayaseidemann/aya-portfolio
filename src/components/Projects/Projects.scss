@@ -12,22 +12,19 @@
 }
 
 .dark .card {
-    &__link {
-        transition: all 0.5s;
-        color: $medium-light-color;
-    }
+    color: $white;
 
     &__tag {
         transition: all 0.5s;
-        background: $medium-dark-color;
+        background: $light-color;
     }
 }
 
 .dark .link {
-    color: $medium-light-color;
 
     &__a {
-        color: $medium-light-color;
+        transition: all 0.5s;
+        color: $white;
     }
 }
 
@@ -148,7 +145,6 @@
     // display: flex;
     position: relative;
     text-align: center;
-    color: $medium-dark-color;
     margin-bottom: 0.5rem;
 
     &__a {

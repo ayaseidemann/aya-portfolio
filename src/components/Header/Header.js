@@ -1,5 +1,6 @@
 import './Header.scss';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 // icons
 import moonMediumDark from '../../assets/Icons/moon-medium-dark.png';

@@ -12,19 +12,13 @@
 .dark .header {
 
     &__wrapper {
-        // transition: all 0.5s;
+        transition: all 0.5s;
         background: $dark-color;
     }
 
     &__title {
+        transition: all 0.5s;
         color: $medium-light-color;
-    }
-
-    &__icon {
-
-        &--mode {
-            background-color: $dark-color;
-        }
     }
 }
 
@@ -37,7 +31,8 @@
     max-width: 55rem;
 
     &__wrapper {
-        background: $white;
+        transition: all 0.5s;
+        background: white;
         height: 4rem;
         width: 100%;
         display: flex;
@@ -50,6 +45,7 @@
     }
 
     &__title {
+        transition: all 0.5s;
         color: $medium-dark-color;
         font-size: 1.5rem;
         line-height: 0.9 ;
@@ -71,9 +67,5 @@
         width: 2rem;
         height: 2rem;
         margin-left: 0.75rem;
-
-        &--mode {
-            background: $white;
-        }
     }
 }
