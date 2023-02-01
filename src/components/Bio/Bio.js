@@ -21,49 +21,57 @@ function Bio({ mode }) {
             <img className='bio__pic' src={profilePic} alt='headshot' />
             <div className='bio__pic--box'></div>
             {mode === 'light' &&
-                        <div className='bio__icons'>
-                            <a className='bio__link bio__link--email' href="mailto:aya.seidemann@gmail.com">
-                                <img
-                                    className='bio__icon bio__icon--email'
-                                    src={envelopeMediumDark}
-                                    alt='email' />
-                            </a>
-                            <a className='bio__link bio__link--github' href='https://github.com/ayaseidemann'>
-                                <img
-                                    className='bio__icon bio__icon--github'
-                                    src={githubMediumDark}
-                                    alt='github' />
-                            </a>
-                            <a className='bio__link bio__link--linkedin' href='https://www.linkedin.com/in/aya-seidemann/'>
-                                <img
-                                    className='bio__icon bio__icon--linkedin'
-                                    src={linkedinMediumDark}
-                                    alt='linkedin' />
-                            </a>
-                        </div>
-                    }
-                    {mode === 'dark' &&
-                        <div className='bio__icons'>
-                            <a className='bio__link bio__link--email' href="mailto:aya.seidemann@gmail.com">
-                                <img
-                                    className='bio__icon bio__icon--email'
-                                    src={envelopeMediumLight}
-                                    alt='email' />
-                            </a>
-                            <a className='bio__link bio__link--github' href='https://github.com/ayaseidemann'>
-                                <img
-                                    className='bio__icon bio__icon--github'
-                                    src={githubMediumLight}
-                                    alt='github' />
-                            </a>
-                            <a className='bio__link bio__link--linkedin' href='https://www.linkedin.com/in/aya-seidemann/'>
-                                <img
-                                    className='bio__icon bio__icon--linkedin'
-                                    src={linkedinMediumLight}
-                                    alt='linkedin' />
-                            </a>
-                        </div>
-                    }
+                <div className='bio__icons'>
+                    <h3 className='bio__connect'>Let's Connect</h3>
+                    <a className='bio__link bio__link--email' href="mailto:aya.seidemann@gmail.com">
+                        <img
+                            className='bio__icon bio__icon--email'
+                            src={envelopeMediumDark}
+                            alt='email' />
+                        <p className='bio__link-name bio__link-name--email'>Email</p>
+                    </a>
+                    <a className='bio__link bio__link--github' href='https://github.com/ayaseidemann'>
+                        <img
+                            className='bio__icon bio__icon--github'
+                            src={githubMediumDark}
+                            alt='github' />
+                        <p className='bio__link-name bio__link-name--github'>Github</p>
+                    </a>
+                    <a className='bio__link bio__link--linkedin' href='https://www.linkedin.com/in/aya-seidemann/'>
+                        <img
+                            className='bio__icon bio__icon--linkedin'
+                            src={linkedinMediumDark}
+                            alt='linkedin' />
+                        <p className='bio__link-name bio__link-name--linkedin'>LinkedIn</p>
+                    </a>
+                </div>
+            }
+            {mode === 'dark' &&
+                <div className='bio__icons'>
+                    <h3 className='bio__connect'>Let's Connect</h3>
+                    <a className='bio__link bio__link--email' href="mailto:aya.seidemann@gmail.com">
+                        <img
+                            className='bio__icon bio__icon--email'
+                            src={envelopeMediumLight}
+                            alt='email' />
+                        <p className='bio__link-name bio__link-name--email'>Email</p>
+                    </a>
+                    <a className='bio__link bio__link--github' href='https://github.com/ayaseidemann'>
+                        <img
+                            className='bio__icon bio__icon--github'
+                            src={githubMediumLight}
+                            alt='github' />
+                        <p className='bio__link-name bio__link-name--github'>Github</p>
+                    </a>
+                    <a className='bio__link bio__link--linkedin' href='https://www.linkedin.com/in/aya-seidemann/'>
+                        <img
+                            className='bio__icon bio__icon--linkedin'
+                            src={linkedinMediumLight}
+                            alt='linkedin' />
+                        <p className='bio__link-name bio__link-name--linkedin'>LinkedIn</p>
+                    </a>
+                </div>
+            }
         </div>
     )
 }

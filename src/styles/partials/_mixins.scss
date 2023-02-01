@@ -1,5 +1,12 @@
 @use "./variables" as *;
 
+// regular phone sizing mixin
+@mixin regular-phone {
+    @media screen and (min-width: $phone-screen-min) {
+        @content;
+    }
+}
+
 // tablet sizing mixin
 @mixin tablet {
     @media screen and (min-width: $tablet-screen-min) {

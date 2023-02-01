@@ -30,6 +30,11 @@
     font-weight: 600;
     max-width: 63rem;
 
+    @include tablet {
+        height: 100%;
+        border-bottom: 2px solid $light-color;
+    }
+
     &__wrapper {
         transition: all 0.5s;
         background: white;
@@ -44,13 +49,18 @@
         padding: 1rem;
 
         @include tablet {
-            height: 6rem;
-            padding: 2rem;
+            height: 7rem;
+            padding: 0 2rem;
         }
 
         @include desktop {
-            height: 7rem;
+            height: 8rem;
         }
+    }
+
+    &__home-link {
+        display: flex;
+        align-items: center;
     }
 
     &__title {
@@ -61,7 +71,8 @@
         max-width: 8rem;
 
         @include tablet {
-            font-size: 2rem;
+            font-size: 2.5rem;
+            max-width: 15rem;
         }
 
         @include desktop {
@@ -84,6 +95,10 @@
         width: 2rem;
         height: 2rem;
         margin-left: 0.5rem;
+
+        @include regular-phone {
+            margin-left: 0.75rem;
+        }
 
         &:hover {
             opacity: 0.7;

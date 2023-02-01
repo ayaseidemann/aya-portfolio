@@ -12,8 +12,16 @@
     transition: all 0.5;
     color: $medium-light-color;
 
-    &__p {
-        transition: all 0.5s;
+    &__text {
+        @include tablet {
+            color: $white;
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        color: $medium-light-color;
     }
 }
 
@@ -28,19 +36,23 @@
     margin-top: 4rem;
 
     @include tablet {
-        width: 33rem;
+        width: 40rem;
     }
 
     @include desktop {
-        width: 36rem;
+        width: 40rem;
     }
 
     &__text {
         width: 19rem;
-        color: $medium-light-color;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
 
         @include tablet {
-            width: 20rem;
+            width: 100%;
+            align-items: flex-end;
+            color: $medium-dark-color;
         }
 
         &--box {
@@ -53,7 +65,12 @@
             z-index: 1;
 
             @include tablet {
-                max-width: 30rem;
+                background-color: $light-color;
+                width: 100%;
+                height: 12.2rem;
+                max-width: 100%;
+                top: 8.8rem;
+                left: 0;
             }
         }
     }
@@ -61,7 +78,6 @@
     &__header {
         transition: all 0.5s;
         font-family: $header-font;
-        color: $white;
         font-weight: 600;
         font-size: 2.5rem;
         padding: 2rem 1rem 0 1rem;
@@ -69,14 +85,14 @@
         z-index: 10;
 
         @include tablet {
-            font-size: 3rem;
+            font-size: 4rem;
             padding-left: 1.5rem;
+            width: 20rem;
         }
     }
 
     &__p {
         transition: all 0.5s;
-        color: $white;
         font-size: 1rem;
         line-height: 1.25;
         padding: 1rem;
@@ -84,7 +100,10 @@
         z-index: 10;
 
         @include tablet {
-            padding-left: 1.5rem;
+            font-size: 1.2rem;
+            font-weight: 300;
+            padding: 1rem 0 1rem 1.5rem;
+            width: 20rem;
         }
     }
 
@@ -94,15 +113,19 @@
         object-fit: cover;
         object-position: top;
         position: absolute;
-        top: 9rem;
+        top: 11rem;
         right: 0;
         z-index: 15;
 
+        @include regular-phone {
+            top: 9rem;
+        }
+
         @include tablet {
-            top: 3.25rem;
-            right: 0;
-            width: 18rem;
-            height: 18rem;
+            top: 0rem;
+            left: -1rem;
+            width: 21rem;
+            height: 21rem;
         }
 
         @include desktop {
@@ -115,12 +138,20 @@
             width: 13.5rem;
             height: 100%;
             position: absolute;
-            top: 8.5rem;
+            top: 9.25rem;
             right: 0;
             z-index: 0;
 
+            @include regular-phone {
+                top: 8.5rem;
+            }
+
             @include tablet {
-                width: 53%;
+                background-color: $medium-light-color;
+                top: 4.5rem;
+                left: 2.5rem;
+                width: 15rem;
+                height: 15rem;
             }
 
             @include desktop {
@@ -136,15 +167,35 @@
         flex-direction: column;
         bottom: -8.7rem;
         right: 14.5rem;
+        z-index: 10;
 
         @include tablet {
-            right: 18rem;
+            right: 11.5rem;
+            bottom: -10rem;
         }
 
         @include desktop {
             bottom: -10rem;
             right: 21rem;
         }
+    }
+
+    &__connect {
+        display: none;
+
+        @include tablet {
+            display: block;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        color: $medium-dark-color;
     }
 
     &__icon {
@@ -156,9 +207,25 @@
             opacity: 0.7;
         }
 
+        @include tablet {
+            width: 2rem;
+            height: 2em;
+            margin-right: 1rem;
+        }
+
         @include desktop {
             width: 2.5rem;
             height: 2.5rem;
+        }
+    }
+
+    &__link-name {
+        display: none;
+
+        @include tablet {
+            display: block;
+            font-size: 1.2rem;
+            font-weight: 300;
         }
     }
 }
