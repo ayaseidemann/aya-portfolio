@@ -23,13 +23,16 @@
     padding: 1rem;
     color: $medium-dark-color;
     width: 85%;
-    // max-width: 57rem;
     max-width: 45rem;
     position: relative;
     margin-top: 4rem;
 
     @include tablet {
         width: 33rem;
+    }
+
+    @include desktop {
+        width: 36rem;
     }
 
     &__text {
@@ -102,6 +105,11 @@
             height: 18rem;
         }
 
+        @include desktop {
+            height: 20rem;
+            width: 21rem;
+        }
+
         &--box {
             background: $light-color;
             width: 13.5rem;
@@ -113,6 +121,11 @@
 
             @include tablet {
                 width: 53%;
+            }
+
+            @include desktop {
+                height: 116%;
+                width: 20rem;
             }
         }
     }
@@ -127,11 +140,25 @@
         @include tablet {
             right: 18rem;
         }
+
+        @include desktop {
+            bottom: -10rem;
+            right: 21rem;
+        }
     }
 
     &__icon {
         width: 2.3rem;
         height: 2.3rem;
         margin-bottom: 0.5rem;
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        @include desktop {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
     }
 }

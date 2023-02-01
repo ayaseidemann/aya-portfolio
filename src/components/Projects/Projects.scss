@@ -36,7 +36,7 @@
     padding: 1rem;
     color: $medium-dark-color;
     margin-top: 10rem;
-    max-width: 57rem;
+    max-width: 65rem;
 
     &__title {
         font-family: $header-font;
@@ -146,6 +146,10 @@
     position: relative;
     text-align: center;
     margin-bottom: 0.5rem;
+
+    &:hover {
+        opacity: 0.7;
+    }
 
     &__a {
         color: $medium-dark-color;
