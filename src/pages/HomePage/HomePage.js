@@ -27,7 +27,7 @@ function HomePage({ mode, toggleDarkMode }) {
             <Header mode={mode} toggleDarkMode={toggleDarkMode}/>
             <div className='main'>
                 <Bio mode={mode}/>
-                <Projects />
+                <Projects mode={mode} />
                 <Contact />
             </div>
         </div>

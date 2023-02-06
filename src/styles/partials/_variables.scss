@@ -1,9 +1,11 @@
-// colors
+@use './typography' as *;
 
+// colors
 $white: #ffffffdb;
 // $light-color: #E1BBB7;
-$light-color: #cc8b8680;
-$medium-light-color: #CC8B86;
+$light-color: #bc615b6a;
+// $medium-light-color: #CC8B86;
+$medium-light-color: #BC625B;
 $medium-dark-color: #453637;
 // $medium-dark-color: #382C2D;
 $dark-color: #260202;
@@ -19,6 +21,7 @@ $dark-color: #260202;
 // // $dark-accent: #00443e;
 
 //fonts
+$main-font: Inter;
 $header-font: PlayfairDisplay;
 $copy-font: IBMPlexSansJP;
 

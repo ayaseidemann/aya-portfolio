@@ -13,7 +13,12 @@ import bandLaptop from '../../assets/Pictures/band-laptop.png';
 import brainflixPhone from '../../assets/Pictures/brainflix-phone.png';
 import brainflixLaptop from '../../assets/Pictures/brainflix-laptop.png';
 
-function Projects() {
+import githubMediumDark from '../../assets/Icons/github-medium-dark.png';
+import githubMediumLight from '../../assets/Icons/github-medium-light.png';
+import arrowMediumDark from '../../assets/Icons/arrow-medium-dark.png';
+import arrowMediumLight from '../../assets/Icons/arrow-medium-light.png';
+
+function Projects({ mode }) {
 
     return (
         <div className='projects'>
@@ -23,6 +28,18 @@ function Projects() {
                     <div className='card__images'>
                         <img className='card__phone' src={sudotwoPhone} alt='sudotwo'/>
                         <img className='card__laptop' src={sudotwoLaptop} alt='sudotwo'/>
+                        {mode === 'light' &&
+                            <div className='light'>
+                                <img className='card__arrow' src={arrowMediumDark} alt='link to site' />
+                                <img className='card__github' src={githubMediumDark} alt='github' />
+                            </div>
+                        }
+                        {mode === 'dark' &&
+                            <div className='light'>
+                                <img className='card__arrow' src={arrowMediumLight} alt='link to site' />
+                                <img className='card__github' src={githubMediumLight} alt='github' />
+                            </div>
+                        }
                     </div>
                     <div className='card__text'>
                         <h3 className='card__title card__title--linked'>Sudotwo!</h3>

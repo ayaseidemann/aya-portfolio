@@ -31,16 +31,18 @@
     padding: 1rem;
     color: $medium-dark-color;
     width: 85%;
-    max-width: 45rem;
+    max-width: 25rem;
     position: relative;
     margin-top: 4rem;
 
     @include tablet {
         width: 40rem;
+        max-width: 40rem;
     }
 
     @include desktop {
         width: 40rem;
+        max-width: 40rem;
     }
 
     &__text {
@@ -58,10 +60,11 @@
         &--box {
             background: $medium-light-color;
             width: 90%;
-            max-width: 19rem;
+            max-width: 20rem;
             height: 85%;
             position: absolute;
             top: 1.5rem;
+            box-shadow: 4px 8px 12px rgba(69, 54, 55, 0.25);
             z-index: 1;
 
             @include tablet {
@@ -77,8 +80,7 @@
 
     &__header {
         transition: all 0.5s;
-        font-family: $header-font;
-        font-weight: 600;
+        font-weight: 900;
         font-size: 2.5rem;
         padding: 2rem 1rem 0 1rem;
         position: relative;
@@ -101,7 +103,7 @@
 
         @include tablet {
             font-size: 1.2rem;
-            font-weight: 300;
+            font-weight: 400;
             padding: 1rem 0 1rem 1.5rem;
             width: 20rem;
         }
@@ -187,7 +189,7 @@
             display: block;
             text-transform: uppercase;
             font-size: 0.8rem;
-            font-weight: 600;
+            font-weight: 700;
             margin-bottom: 0.75rem;
         }
     }
@@ -225,7 +227,7 @@
         @include tablet {
             display: block;
             font-size: 1.2rem;
-            font-weight: 300;
+            font-weight: 400;
         }
     }
 }
